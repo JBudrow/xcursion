@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20160424010312) do
 
   create_table "trails", force: :cascade do |t|
     t.integer  "province_id"
+    t.integer  "user_id"
     t.integer  "lat"
     t.integer  "lon"
     t.integer  "distance"
