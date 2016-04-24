@@ -1,0 +1,38 @@
+<small>NEW ACCOUNT</small>
+
+<%= form_tag @user do %>
+  <ul class='form-errors'>
+    <%= if @user.errors.count > 0 %>
+      <% @user.errors.full_messages.each do |message| %>
+        <li class='form-error'><%= message %></li>
+      <% end %>
+    <% end %>
+  </ul>
+
+  <div class='user-field'>
+    <%= label_tag 'Username' %><br/>
+    <%= label_field_tag 'alias', @user.alias %>
+  </div>
+
+  <div class='user-field'>
+    <%= label_tag 'First' %><br/>
+    <%= label_field_tag 'name', @user.first_name %>
+  </div>
+
+  <div class='user-field'>
+    <%= label_tag 'Last' %><br/>
+    <%= label_field_tag 'last', @user.last_name %>
+  </div>
+
+  <div class='user-field'>
+    <%= label_tag 'Email' %><br/>
+    <%= label_field_tag 'email', @user.email %>
+  </div>
+
+  <div class='user-field'>
+    <%= label_tag 'Password' %><br/>
+    <%= password_field_tag 'password', @user.password %>
+  </div>
+
+  <%= button_tag 'SIGN UP' %>
+<% end %>

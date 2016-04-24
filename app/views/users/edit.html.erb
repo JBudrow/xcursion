@@ -1,0 +1,24 @@
+<%= @user.alias %>
+
+<%= form_tag users_path(@user), method: :put do %>
+    <div class='user-field'>
+      <%= label_tag 'First' %><br/>
+      <%= text_field_tag 'first', @user.first_name %>
+    </div>
+
+    <div class='user-field'>
+      <%= label_tag 'Last' %><br/>
+      <%= text_field_tag 'last', @user.last_name %>
+
+    <div class='user-field'>
+        <%= label_tag 'email' %><br/>
+        <%= text_field_tag 'email', @user.email %>
+    </div>
+
+    <div class='user-field'>
+        <%= label_tag 'password' %><br/>
+        <%= text_area_tag 'password', @user.password %>
+    </div>
+
+    <%= button_tag 'UPDATE' %>
+<% end %>
