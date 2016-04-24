@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424010312) do
+ActiveRecord::Schema.define(version: 20160424193900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "provinces", force: :cascade do |t|
     t.string   "region"
-    t.string   "county"
     t.string   "state"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "counties",   default: [], array: true
   end
 
   create_table "trails", force: :cascade do |t|
