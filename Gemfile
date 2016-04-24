@@ -29,6 +29,12 @@ gem 'bcrypt', '~> 3.1.7'
 # Materialize Sass version for Rails Asset Pipeline
 gem 'materialize-sass'
 
+# AWS Ruby Library for interfacing with Amazon Web Services
+gem 'aws-sdk', '< 2.0'
+
+# Easy file attachment management for ActiveRecord
+gem 'paperclip'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
