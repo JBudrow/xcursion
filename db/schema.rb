@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160424004356) do
+ActiveRecord::Schema.define(version: 20160424005607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,19 @@ ActiveRecord::Schema.define(version: 20160424004356) do
     t.string   "county"
     t.string   "state"
     t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "trails", force: :cascade do |t|
+    t.integer  "province_id"
+    t.integer  "lat"
+    t.integer  "lon"
+    t.integer  "distance"
+    t.string   "name"
+    t.string   "image"
+    t.text     "description"
+    t.text     "direction"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
