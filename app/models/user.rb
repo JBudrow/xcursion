@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   validates :email, format: { with: /.+@.+/, message: 'Invalid email address' }
 
   has_many :trails
-  has_many :trails, through: :provinces
+  has_many :trails, through: :counties 
 end
