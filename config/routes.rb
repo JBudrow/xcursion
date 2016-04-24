@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
 
   resources :provinces, only: [:index, :show]
+  resources :trails 
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
