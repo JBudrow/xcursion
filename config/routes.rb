@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'provinces#index'
+  root 'trails#index'
 
   get    'login', to:  'sessions#new'
   post   'login', to:  'sessions#create'

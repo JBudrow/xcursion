@@ -6,6 +6,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #F9F9F9;
 }
 
 main {
@@ -26,8 +27,13 @@ a.brand-logo.center {
   }
 }
 
-// PROVINCES INDEX
+// TRAILS INDEX
 
 #sub-nav {
   padding-top: 3em;
+}
+
+div.col.s8.offset-s2 {
+  border: 1px solid #DADADA;
+  background-color: white;
 }

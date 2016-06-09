@@ -8,6 +8,8 @@ class TrailsController < ApplicationController
   end
 
   def index
+    @trails = Trail.all
+    render 'index'
   end
 
   def show
