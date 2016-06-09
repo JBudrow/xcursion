@@ -1,1 +1,33 @@
-@import 'materialize';
+@import "materialize";
+
+// MAIN
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+// NAV
+
+ul.right.hide-on-med-and-down a {
+  color: black;
+}
+
+a.brand-logo.center {
+  color: black;
+
+  img {
+    width: 2em;
+  }
+}
+
+// PROVINCES INDEX
+
+#sub-nav {
+  padding-top: 3em;
+}
