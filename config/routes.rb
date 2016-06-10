@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   delete 'logout', to: 'sessions#destroy'
 
   resources :provinces, only: [:index, :show] do
-    resources :counties, only: [:index, :show] do
+    # resources :counties, only: [:index, :show] do
       resources :trails
-    end
+    # end
   end
 
   resources :users do
