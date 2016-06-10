@@ -5,7 +5,7 @@ class ProvincesController < ApplicationController
   end
 
   def show
-    @province = Province.find(params['id'])
+    @province = Province.find params['id']
     render 'show'
   end
 end

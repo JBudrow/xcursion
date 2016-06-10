@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon" href="/assets/images/favicon.ico">
   <title>xcursion</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -8,19 +9,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
-    <div class="nav-wrapper #ffffff white">
-      <a href="#!" class="brand-logo center"><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/magic-marker-icons-culture/115396-magic-marker-icon-culture-state-georgia.png"</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#!"></a></li>
-        <li><a href="#!"></a></li>
-      </ul>
-    </div>
-    <%= render partial: "shared/sidenav" %>
-  </nav>
-
-
+  <div class="navbar-fixed">
+    <nav>
+      <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+      <div class="nav-wrapper #ffffff white">
+        <a class="brand-logo center"><img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/magic-marker-icons-culture/115396-magic-marker-icon-culture-state-georgia.png"></a>
+      </div>
+    </nav>
+  </div>
 <%= yield %>
   <%= render partial: "shared/footer" %>
 </body>
 </html>
+
+
+<!-- <li><a href="#">Historic High Country</a></li>
+<li><a href="#">Northeast Mountains</a></li>
+<li><a href="#">Atlanta Metro</a></li>
+<li><a href="#">Presidential Pathways</a></li>
+<li><a href="#">Historic Heartland</a></li>
+<li><a href="#">Classic South</a></li>
+<li><a href="#">Magnolia Midlands</a></li>
+<li><a href="#">Plantation Trace</a></li>
+<li><a href="#">Coast</a></li> -->

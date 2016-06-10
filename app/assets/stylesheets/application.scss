@@ -27,13 +27,32 @@ a.brand-logo.center {
   }
 }
 
-// TRAILS INDEX
+i.mdi-navigation-menu {
+  color: black;
+}
+
+i.material-icons.prefix {
+  color: black;
+}
+
+// TRAIL INDEX
 
 #sub-nav {
   padding-top: 3em;
 }
 
 div.col.s8.offset-s2 {
+  border: 1px solid #DADADA;
+  background-color: white;
+}
+
+// PROVINCE INDEX
+
+div#main-province.container {
+  padding-top: 4em;
+}
+
+div#main-province secondary.col.s5 {
   border: 1px solid #DADADA;
   background-color: white;
 }
